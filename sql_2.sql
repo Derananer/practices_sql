@@ -49,5 +49,6 @@ SELECT EMP.ENAME, DEPT.DNAME, EMP.SAL, SALGRADE.GRADE FROM EMP,DEPT,SALGRADE WHE
 разряд ЕТС.*/
 
 
-SELECT * FROM BONUS;
+SELECT ENAME FROM EMP WHERE ENAME LIKE '_!%%' ESCAPE '!';/*15)Сформировать запрос, выводящий фамилии работников, у которых второй символ
+фамилии %.*/
 
